@@ -46,13 +46,13 @@ input:focus {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background: #666666;
+  background: #959595;
   border-radius: 50%;
   bottom: 5%;
   right: 2%;
   text-align: center;
   font-size: 12px;
-  border: 1px solid #666666;
+  border: 1px solid #959595;
   z-index: 1;
 }
 
@@ -88,6 +88,13 @@ input:focus {
   float: right;
   overflow: hidden;
   margin: 34px 0;
+  position: absolute;
+  right: 0;
+  width : 670px;
+  height : 40px;
+letter-spacing: 1px;
+font-size: 14px;
+text-transform: uppercase;
 }
 
 #header .inner #login_menu,
@@ -100,7 +107,8 @@ input:focus {
 }
 
 #header .inner #login_menu li i:hover {
-  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   color: #333333;
 }
 
@@ -118,7 +126,7 @@ input:focus {
 /* 로그인 메뉴 공통 */
 #header .inner ul>li {
   float: left;
-  height: 22px;
+  /* height: 22px; */
 }
 
 #header .inner ul>li a {
@@ -128,10 +136,10 @@ input:focus {
 /* gnb 영역 */
 #gnb {
   overflow: hidden;
-  margin-right: 106px;
+  margin-right: 90px;
 }
 
-#gnb li {
+#gnb>li {
   margin-left: 50px;
 }
 
@@ -145,7 +153,8 @@ input:focus {
 
 #gnb li a:hover {
   color: #333333;
-  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 /* 로그인 메뉴 영역 */
@@ -170,7 +179,7 @@ input:focus {
 }
 
 #login_menu li span.count {
-  font-size: 8px;
+  font-size: 6px;
   position: absolute;
   display: inline-block;
   width: 12px;
@@ -180,8 +189,73 @@ input:focus {
   border-radius: 100%;
   background-color: #959595;
   color: white;
-  margin-left: 5px;
+  margin-left: 2px;
   padding-bottom: 1px;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown {
+  display: inline-block;
+height: 91px;
+}
+
+.submenu_container {
+  width: 1330px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 0px 190px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  display: none;
+}
+
+.dropdown:hover > .submenu_container {
+    display: flex;
+
+}
+
+.submenu_container:hover {
+  display: flex;
+}
+
+.submenu {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+}
+
+.submenu>li {
+  margin: 0;
+}
+
+.dropdown>li.dropdown>.submenu_container {
+  display: block;
+}
+
+.dropdown>li.dropdown:hover>.submenu_container {
+  display: block;
+}
+
+.submenu>li>a {
+  display: block;
+  height: 40px;
+  line-height: 20px;
+  color: #959595;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.submenu_container > .submenu > li:first-child > a {
+  font-weight: bold;
+  border-bottom: 1px solid #b7b7b7;
+  margin-bottom: 30px;
 }
 
 /* 메인 배너 영역 */
@@ -229,7 +303,7 @@ input:focus {
   display: inline-block;
   padding: 14px 28px;
   line-height: normal;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   color: white;
   font-size: 11px;
   font-weight: 300;
@@ -239,13 +313,14 @@ input:focus {
   font-weight: 400;
   font-style: normal;
   background-color: transparent;
-  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -webkit-tap-highlight-color: initial;
 }
 
 .common_btn:hover {
   color: #666;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* section 영역 */
@@ -308,10 +383,11 @@ input:focus {
 
 #container section .inner .box_wrap li .items h3 {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 22px;
   width: 380px;
   height: 60px;
   margin-top: 20px;
+  letter-spacing: 0.4px;
 }
 
 #container section .inner .box_wrap li .items p {
@@ -375,9 +451,7 @@ input:focus {
 }
 
 #container section .inner .thumb_img_wrap ul li img {
-  width: 100%;
-  /* 이미지가 초기값 220픽셀 이상 또는 이하로 변경 시 li % 기준으로 변경된다. */
-}
+  width: 100%;}
 
 /*  section tyle*/
 #container section .inner .box {
@@ -399,7 +473,7 @@ input:focus {
 }
 
 #container section:nth-child(4) {
-  background-color: #f4f4f4;
+  background-color: #ffffff1b;
   background-image: url("../img/slider/slider_3.jpg");
   background-repeat: no-repeat;
   background-position: calc(50% + 300px) center;
@@ -443,9 +517,11 @@ input:focus {
 #container section:nth-child(3) .inner .box .text_box .common_btn:hover,
 #container section:nth-child(4) .inner .box .text_box .common_btn:hover,
 #container section:nth-child(5) .inner .box .text_box .common_btn:hover {
-  background-color: rgba(255, 255, 255, 5);
-  transition: background-color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
+
 
 #footer {
   background-color: #white;
@@ -571,7 +647,8 @@ input:focus {
   font-weight: 400;
   font-style: normal;
   background-color: transparent;
-  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86), border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: color 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   z-index: 1;
   -webkit-tap-highlight-color: initial;
   background-color: #989898;
@@ -580,45 +657,30 @@ input:focus {
 }
 
 /* #footer end */
-
 /* video area start */
 #video_container .main_video {
   /* width: 100vw; */
   height: 600px;
   background: black;
-text-align: center;
+  text-align: center;
 }
 
 #video_container .main_video iframe {
-    margin: 0 auto;
-    width: 200%;
-
-    -ms-zoom: 0.5;
-
-	-moz-transform: scale(0.5);
-	-moz-transform-origin: 0 0;
-
-	-o-transform: scale(0.5);
-	-o-transform-origin: 0 0;
-
-	-webkit-transform: scale(0.5);
-	-webkit-transform-origin: 0 0;
-
-	transform: scale(0.5);
-	transform-origin: 0 0;
-
-	top:0px;
-	left:0px;
-
-	width:200%;
-	height:200%;
-}
-</style>
-
-}
-</style>
-
-
+  margin: 0 auto;
+  width: 200%;
+  -ms-zoom: 0.5;
+  -moz-transform: scale(0.5);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.5);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  top: 0px;
+  left: 0px;
+  width: 200%;
+  height: 200%;
 }
 
 /* video area end */

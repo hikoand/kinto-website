@@ -42,9 +42,39 @@
         </div>
         <div class="inner">
           <ul id="gnb">
-            <li>
-              <a href="">SHOP&nbsp <i class="fas fa-chevron-down"></i></a>
+            <!-- dropdown start -->
+            <li class="dropdown">
+              <a href="#">SHOP&nbsp <i class="fas fa-chevron-down"></i></a>
+              <div class="submenu_container">
+                <ul class="submenu">
+                  <li><a href="#">drinkware</a></li>
+                  <li><a href="#">teaware</a></li>
+                  <li><a href="#">coffeeware</a></li>
+                  <li><a href="#">glasses</a></li>
+                  <li><a href="#">mugs & cups</a></li>
+                  <li><a href="#">tumbler & bottles</a></li>
+                  <li><a href="#">kettles</a></li>
+                </ul>
+                <ul class="submenu">
+                  <li><a href="#">tableware</a></li>
+                  <li><a href="#">plate</a></li>
+                  <li><a href="#">bowls</a></li>
+                  <li><a href="#">cutlery</a></li>
+                </ul>
+                <ul class="submenu">
+                  <li><a href="#">kitchenware</a></li>
+                  <li><a href="#">canisters</a></li>
+                  <li><a href="#">trays & coasters</a></li>
+                  <li><a href="#">cookware</a></li>
+                </ul>
+                <ul class="submenu">
+                  <li><a href="#">interior</a></li>
+                  <li><a href="#">flower vases</a></li>
+                  <li><a href="#">outdoor</a></li>
+                </ul>
+              </div>
             </li>
+            <!-- dropdown end -->
             <li><a href="#first">JOURNAL</a></li>
             <li><a href="#second">BEST SELLER</a></li>
             <li><a href="#third">ABOUT</a></li>
@@ -203,14 +233,21 @@
   <!--container end-->
 
   <!--video area start-->
-  <div id="video_container">
-    <div class="main_video">
-      <iframe id="ytplayer" type="text/html" width="720" height="405"
-      src="https://www.youtube.com/embed/mmZj7U9iy_Y?autoplay=1&controls=0&disablekb=1&enablejsapi=1&end=60&fs=0&loop=1&color=white"
-      frameborder="0" allowfullscreen>
-frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+  <!-- <div id="video_container">
+      <div class="main_video">
+        <iframe
+          id="ytplayer"
+          type="text/html"
+          width="720"
+          height="405"
+          src="https://www.youtube.com/embed/mmZj7U9iy_Y?autoplay=1&controls=0&disablekb=1&enablejsapi=1&end=60&fs=0&loop=1&color=white"
+          frameborder="0"
+          allowfullscreen
+        >
+          frameborder="0" allowfullscreen></iframe
+        >
+      </div>
+    </div> -->
   <!--video end-->
 
   <!--footer start-->
@@ -221,9 +258,15 @@ frameborder="0" allowfullscreen></iframe>
           <a href="index.html"><img src="./img/f_logo.png" alt="footer_logo" /></a>
         </div>
         <ul>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
         </ul>
         <div class="copyright">
           <p>© 2021 KINTO EUROPE ALL RIGHTS RESERVED.</p>
@@ -252,7 +295,7 @@ frameborder="0" allowfullscreen></iframe>
       <div class="f_right">
         <p>Sign up for the latest updates & collection releases.</p>
         <form action="email_form">
-          <input type="email" name="email" class="form_input" placeholder="Enter your email address"><br>
+          <input type="email" name="email" class="form_input" placeholder="Enter your email address" /><br />
           <input type="button" class="form_submit" value="SUBSCRIBE" onclick="alert('Thank you for submit your address.')" />
         </form>
       </div>
