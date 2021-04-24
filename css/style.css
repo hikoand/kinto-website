@@ -258,7 +258,7 @@ height: 91px;
   margin-bottom: 30px;
 }
 
-/* 메인 배너 영역 */
+/* 메인배너 영역 */
 #mainbanner {
   background-image: url("../img/main_banner/main_banner_1.jpg");
   background-repeat: no-repeat;
@@ -352,6 +352,7 @@ height: 91px;
 }
 
 /* section 공통요소 end */
+
 #container section:nth-of-type(1) .inner {
   min-height: 485px;
   padding: 150px 0;
@@ -421,13 +422,11 @@ height: 91px;
 
 #container section .inner .thumb_img_wrap {
   text-align: center;
-  /* 자식요소 ul을 가운데 정렬 */
 }
 
 #container section .inner .thumb_img_wrap ul {
   overflow: hidden;
   display: inline-block;
-  /* 자식요소 li컨텐츠 크기만큼 너비가 지정된다. */
 }
 
 #container section .inner .thumb_img_wrap ul:nth-child(1) {
@@ -453,7 +452,7 @@ height: 91px;
 #container section .inner .thumb_img_wrap ul li img {
   width: 100%;}
 
-/*  section tyle*/
+/*  section style*/
 #container section .inner .box {
   float: left;
   width: 50%;
@@ -655,8 +654,8 @@ height: 91px;
   color: white;
   cursor: pointer;
 }
-
 /* #footer end */
+
 /* video area start */
 #video_container .main_video {
   /* width: 100vw; */
@@ -682,5 +681,4 @@ height: 91px;
   width: 200%;
   height: 200%;
 }
-
 /* video area end */
