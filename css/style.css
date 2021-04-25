@@ -521,6 +521,124 @@ height: 91px;
     border 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+/*slider gallery*/
+
+#fifth {
+  background: #f2f2f2;
+  padding: 100px 0;
+}
+
+#fifth h2 {
+  font-size: 45px;
+    line-height: 52px;
+    font-weight: 400;
+    color: #959595;
+    text-align: center; 
+    padding-bottom: 80px;
+}
+
+.album_container{
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+  .album{  
+    overflow: hidden;
+    margin: auto;
+    width: 1320px;
+    height: 650px;
+  }
+
+  .images div {
+    width: 650px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .images .img_1 {
+    background-image: url(../img/gallery/gallery_1.jpg);
+    margin-right: 20px;
+  }
+
+  .images .img_2 {
+    background-image: url(../img/gallery/gallery_2.jpg);
+  }
+
+  .images .img_3 {
+    background-image: url(../img/gallery/gallery_3.jpg);
+    margin-right: 20px;
+  }
+
+  .images .img_4 {
+    background-image: url(../img/gallery/gallery_4.jpg);
+  }
+
+  .images .img_5 {
+    background-image: url(../img/gallery/gallery_5.jpg);
+    margin-right: 20px;
+  }
+
+  .images .img_6 {
+    background-image: url(../img/gallery/gallery_6.jpg);
+  }
+
+  .images .img_7 {
+    background-image: url(../img/gallery/gallery_7.jpg);
+    margin-right: 20px;
+  }
+
+  .images .img_8 {
+    background-image: url(../img/gallery/gallery_8.jpg);
+  }
+
+
+  .images{
+    position: relative;
+    display: flex;
+    transition: all 0.3s ease 0s;
+    float: left;
+  }
+
+  .slider_btn {
+    position: relative;
+    bottom: 325px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .slider_btn.prev {
+    left: 20px;
+  }
+
+  .slider_btn.next {
+    right: 20px;
+  }
+
+  button, button:active, button:focus{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: none;
+    color: white;
+    background-color: #333;
+    outline: none;
+  }
+  button:hover{
+    background-color: #333;
+  }
+  button:disabled{
+    background-color: #959595;
+  }
+  .prev{
+    float: left;
+  }
+  .next{
+    float: right;
+  }
+
+/*footer start*/
 
 #footer {
   background-color: #white;
