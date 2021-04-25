@@ -622,11 +622,12 @@ height: 91px;
     border-radius: 100%;
     border: none;
     color: white;
-    background-color: #333;
+    background-color:rgba(56, 56, 56, 33);
     outline: none;
   }
-  button:hover{
-    background-color: #333;
+  .album_container button:hover{
+    background-color: transparent;
+    border: 1px solid white;
   }
   button:disabled{
     background-color: #959595;
@@ -641,7 +642,7 @@ height: 91px;
 /*footer start*/
 
 #footer {
-  background-color: #white;
+  background-color: white;
   min-width: 1320px;
 }
 
