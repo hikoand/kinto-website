@@ -380,6 +380,16 @@ li.dropdown:hover > .submenu_container {
   min-height: 180px;
 }
 
+#container section .inner .box_wrap li .items a {
+  display: block;
+  width: 380px;
+  height: 220px;
+}
+
+#container section .inner .box_wrap li .items a div {
+  height: 100%;
+}
+
 #container section .inner .box_wrap li .items h3 {
   font-size: 20px;
   line-height: 22px;
@@ -394,7 +404,7 @@ li.dropdown:hover > .submenu_container {
   font-size: 15px;
 }
 
-#container section .inner .box_wrap li .items > div {
+#container section .inner .box_wrap li .items a div {
   width: 380px;
   height: 220px;
   background-repeat: no-repeat;
@@ -570,21 +580,6 @@ li.dropdown:hover > .submenu_container {
   background-image: url(../img/gallery/gallery_7.jpg);
 }
 
-/* .images .img_5 {
-  background-image: url(../img/gallery/gallery_5.jpg);
-}
-
-.images .img_6 {
-  background-image: url(../img/gallery/gallery_6.jpg);
-}
-
-.images .img_7 {
-  background-image: url(../img/gallery/gallery_7.jpg);
-}
-
-.images .img_8 {
-  background-image: url(../img/gallery/gallery_8.jpg);
-}  */
 .images {
   position: relative;
   display: flex;
