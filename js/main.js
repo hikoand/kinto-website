@@ -1,46 +1,49 @@
+//animation
+new WOW().init();
+
 //slider
 
 let curPos = 0;
 let postion = 0;
 const IMAGE_WIDTH = 1300;
-const prevBtn = document.querySelector(".prev")
-const nextBtn = document.querySelector(".next")
-const images = document.querySelector(".images")
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+const images = document.querySelector('.images');
 
-function prev(){
-  if(curPos > 0){
-    nextBtn.removeAttribute("disabled")
+function prev() {
+  if (curPos > 0) {
+    nextBtn.removeAttribute('disabled');
     postion += IMAGE_WIDTH;
     images.style.transform = `translateX(${postion}px)`;
     curPos = curPos - 1;
   }
-  if(curPos == 0){
-    prevBtn.setAttribute('disabled', 'true')
+  if (curPos == 0) {
+    prevBtn.setAttribute('disabled', 'true');
   }
 }
-function next(){
-  if(curPos < 3){
-    prevBtn.removeAttribute("disabled")
+function next() {
+  if (curPos < 3) {
+    prevBtn.removeAttribute('disabled');
     postion -= IMAGE_WIDTH;
     images.style.transform = `translateX(${postion}px)`;
     curPos = curPos + 1;
   }
-  if(curPos == 3){
-    nextBtn.setAttribute('disabled', 'true')
+  if (curPos == 3) {
+    nextBtn.setAttribute('disabled', 'true');
   }
 }
 
-function init(){
-  prevBtn.setAttribute('disabled', 'true')
-  prevBtn.addEventListener("click", prev)
-  nextBtn.addEventListener("click", next)
+function init() {
+  prevBtn.setAttribute('disabled', 'true');
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
 }
 
 init();
 
 //iframe api
 var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
+tag.src = 'https://www.youtube.com/iframe_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -53,19 +56,19 @@ function onYouTubeIframeAPIReady() {
     width: '1320',
     videoId: 'mmZj7U9iy_Y',
     playerVars: {
-      'setVolume': 0,
-      'rel': 0,
-      'autohide': 1,
-      'enablejsapi': 1,
-      'disablekb': 1,
-      'loop': 1,
-      'frameborder': 0,
+      setVolume: 0,
+      rel: 0,
+      autohide: 1,
+      enablejsapi: 1,
+      disablekb: 1,
+      loop: 1,
+      frameborder: 0,
       // 'controls': 0
     },
     events: {
-      'onReady': onPlayerReady, //로딩중에 이벤트 실행
-      'onStateChange': onPlayerStateChange //플레이어 상태 변화 시 이벤트를 실행
-    }
+      onReady: onPlayerReady, //로딩중에 이벤트 실행
+      onStateChange: onPlayerStateChange, //플레이어 상태 변화 시 이벤트를 실행
+    },
   });
 }
 
