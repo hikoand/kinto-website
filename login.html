@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>KINTO</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Valuing usability and aesthetics to create products that stand by you in your everyday life."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/initial.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/jquery_3.5.1.js"></script>
+    <script type="text/javascript" src="./js/timeline_tab.js"></script>
+  </head>
+  <body>
+    <!-- wrap start-->
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <div id="gnb_btn">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div id="logo">
+            <h1>
+              <a href="index.html"
+                ><img src="./img/logo.png" alt="main-logo"
+              /></a>
+            </h1>
+          </div>
+          <ul id="gnb">
+            <!-- dropdown start -->
+            <li class="dropdown">
+              <a href="#">shop&nbsp <i class="fas fa-chevron-down"></i></a>
+              <div class="submenu_container">
+                <ul class="submenu">
+                  <li><a href="#">drinkware</a></li>
+                  <li><a href="#">teaware</a></li>
+                  <li><a href="#">coffeeware</a></li>
+                  <li><a href="#">glasses</a></li>
+                  <li><a href="#">mugs & cups</a></li>
+                  <li><a href="#">tumbler & bottles</a></li>
+                  <li><a href="#">kettles</a></li>
+                </ul>
+                <ul class="submenu">
+                  <li><a href="#">tableware</a></li>
+                  <li><a href="#">plate</a></li>
+                  <li><a href="#">bowls</a></li>
+                  <li><a href="#">cutlery</a></li>
+                </ul>
+                <ul class="submenu">
+                  <li><a href="#">kitchenware</a></li>
+                  <li><a href="#">canisters</a></li>
+                  <li><a href="#">trays & coasters</a></li>
+                  <li><a href="#">cookware</a></li>
+                </ul>
+                <ul class="submenu">
+                  <li><a href="#">interior</a></li>
+                  <li><a href="#">flower vases</a></li>
+                  <li><a href="#">outdoor</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- dropdown end -->
+            <li><a href="#first">journal</a></li>
+            <li><a href="#second">best seller</a></li>
+            <li><a href="#third">about</a></li>
+          </ul>
+          <ul id="login_menu">
+            <li>
+              <a href="#"><i class="fas fa-user"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li>
+              <a href="#" class="cart"
+                ><i class="fas fa-shopping-cart"></i>
+                <!-- <span class="count">0</span> -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!--header end-->
+    </div>
+    <!--warp end -->
+    <!-- login start -->
+    <div id="login_container">
+      <div class="login_text_container">
+        <h2>Login</h2>
+        <p>Please enter your e-mail and password:</p>
+      </div>
+      <input type="text" placeholder="Enter Username" name="uname" required />
+      <input type="password" placeholder="Enter Password" name="psw" required />
+      <button type="submit" onclick="alert('thank you for login')">
+        Login
+      </button>
+      <div class="psw_text_container">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </div>
+    <!-- login end -->
+    <!--footer start-->
+    <footer id="footer">
+      <div class="inner">
+        <div class="f_left">
+          <div class="f_box logo">
+            <a href="index.html"
+              ><img src="./img/f_logo.png" alt="footer_logo"
+            /></a>
+          </div>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p>© 2021 KINTO EUROPE ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+        <div class="f_box">
+          <div class="f_center">
+            <ul>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">JOURNAL</a></li>
+              <li><a href="#">NEWS</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="#">SOTRE LOCATION</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">RETURN POLICY</a></li>
+            <li><a href="#">COOKIE POLICY</a></li>
+            <li><a href="#">TERMS & CONDITIONS</a></li>
+            <li><a href="#">DOWN LOADS</a></li>
+          </ul>
+        </div>
+        <div class="f_right">
+          <p>Sign up for the latest updates & collection releases.</p>
+          <form action="email_form">
+            <input
+              type="email"
+              name="email"
+              class="form_input"
+              placeholder="Enter your email address"
+            /><br />
+            <input
+              type="button"
+              class="form_submit"
+              value="SUBSCRIBE"
+              onclick="alert('Thank you for submit your address.')"
+            />
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>
